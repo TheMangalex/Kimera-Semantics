@@ -5,6 +5,8 @@ find_package(catkin_simple REQUIRED)
 
 catkin_simple()
 
+set(CMAKE_CXX_FLAGS "-std=c++14")
+
 cs_add_library(${PROJECT_NAME}
   include/kimera_semantics_ros/depth_map_to_pointcloud.h
   include/kimera_semantics_ros/ros_params.h
